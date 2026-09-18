@@ -7,13 +7,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CoutTotalTest {
     @Test
-    void shouldCalculateTotalExpenses() {
+    void CalculeCoutTotal() {
 
-        Commande commande1 = new Commande();
+        Commande commande = new Commande();
 
-        commande1.ajout(new Commande(LocalDate.now()));
+        commande.ajout(new Commande(LocalDate.of(2026, 09, 18), ""));
 
-        double result = commande1.coutTotal();
+        double result = commande.coutTotal();
 
         assertEquals(, result);
     }
